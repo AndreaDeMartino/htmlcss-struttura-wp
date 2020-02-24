@@ -1,0 +1,100 @@
+/* Regole Generali */
+*{
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+/* Allineamento centrale generale */
+body{
+  width: 70%;
+  margin: 0 auto;
+}
+
+/* Sezione Logo Testata */
+#logo{
+  height: 200px;
+  background-color:  #00b3b3;
+  margin-top: 20px;
+  border: 2px solid black;
+}
+
+/* Sezione Menu Testata */
+#menu{
+  background-color: #ffad33;
+  margin-top: 5px;
+  padding: 2px;
+  border: 2px solid black;
+}
+
+#menu ul{
+  text-align: center;
+}
+
+#menu ul li{
+  display:inline-block;
+  vertical-align: middle;
+  padding: 1px;
+}
+
+a:link{
+  color: grey;
+  text-decoration: none;
+}
+
+a:visited{
+  color: black;
+  text-decoration: none;
+}
+
+/* Corpo */
+#container{
+  margin-top: 20px;
+}
+
+.colonna{
+  float:left;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+
+/* Colonna Sinistra */
+.lxcol{
+  height: 350px;
+  width: 30%;
+  background-color: #1ad1ff;
+}
+/* Colonna Centrale */
+.cntrcol{
+  height: 250px;
+  width: 35%;
+  background-color: lightgreen;
+  margin: 0px 2.5%;
+}
+/* Colonna Destra */
+.cont_rxcol{
+  float:left;
+  height: 600px;
+  width: 30%;
+}
+
+/* Contenuto Colonna Destra */
+.cont_rxcol .rxcol{
+  height: calc(570px/3);
+  background-color: #ff9999;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+.cont_rxcol .rxcol:nth-child(2){
+margin: 15px 0;
+}
+
+/* Footer */
+#cont_footer{
+  float:left;
+  background-color: #8080ff;
+  margin: 20px 0;
+  height: 80px;
+  width: 100%;
+  border: 2px solid black;
+  border-radius: 10px;
+}
