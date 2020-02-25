@@ -1,42 +1,60 @@
+
 /* Regole Generali */
 *{
   margin: 0px;
   box-sizing: border-box;
 }
 
+/* Utilities */
+.clearfix::after{
+content: '';
+display: table;
+clear: both;
+}
+
 /* Allineamento centrale generale */
-body{
+.generalcontainer{
   width: 70%;
   margin: 0 auto;
 }
 
-/* Testo Generale */
-.text{
-  text-align: center;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform:translate(-50%, -50%);
-  font-family: 'Changa';
-  font-size: 30px;
-  color: black;
+/* Testata */
+.mainheader{
+  margin-top: 10px;
 }
 
-/* Sezione Logo Testata */
 #logo{
-  position: relative;
-  height: 200px;
-  background-color:  #00b3b3;
-  margin-top: 20px;
-  border: 2px solid black;
+  background-image: url('../img/header.jpg');
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-/* Sezione Menu Testata */
+#logobool{
+  background-image: url('../img/bool.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50px;
+  width: 100%;
+  text-align: center;
+  margin: 10px 0;
+}
+
+#grafico{
+  background-image: url('../img/grafico.png');
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 400px;
+  width: 100%;
+  text-align: center;
+}
+
 #menu{
-  background-color: #ffad33;
-  margin-top: 5px;
+  height: 30px;
   padding: 2px;
-  border: 2px solid black;
+  background-color: #2d5674;
 }
 
 #menu ul{
@@ -45,73 +63,136 @@ body{
 
 #menu ul li{
   display:inline-block;
-  vertical-align: middle;
-  padding: 1px;
+  padding: 4px;
+  font-family: 'Tomorrow';
+  font-size: 18px;
+  font-weight: bold;
 }
 
 a:link{
-  color: grey;
+  color: white;
   text-decoration: none;
 }
 
 a:visited{
-  color: black;
+  color: white;
   text-decoration: none;
 }
 
-/* Corpo */
-#container{
-  margin-top: 20px;
+a:hover{
+  color: #fc621c;
+  text-decoration: none;
 }
 
+/* Testi */
+/* TITOLI font-family: 'Odibee Sans'; */
+/* SOTTOTILI font-family: 'Work Sans';*/
+/* CONTENUTI font-family: 'Montserrat'; */
+.titolo{
+  font-family: 'Odibee Sans';
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 25px;
+  color: #2d5674;
+}
+
+.sottotitolo{
+  font-family: 'Work Sans';
+  color: #ff601c;
+  font-size: 16px;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.contenuto{
+  font-family: 'Montserrat';
+  font-size: 15px;
+}
+
+.titolografico{
+  font-family: 'Odibee Sans';
+  text-align: center;
+  margin-top: 30px;
+  font-size: 25px;
+  color: #ff601c;
+}
+
+.icona{
+  font-family: 'Odibee Sans';
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 25px;
+  color: #d81a60;
+}
+
+/* Main */
+#mainconteiner{
+  background-color: #82ef6f;
+}
+
+/* Valori Standard Colonna */
 .colonna{
   float:left;
+  padding: 5px;
   border-radius: 10px;
-  border: 2px solid black;
 }
 
 /* Colonna Sinistra */
 .lxcol{
-  position: relative;
-  height: 350px;
-  width: 30%;
-  background-color: #1ad1ff;
+  width: 19.5%;
+  background-color: white;
+  margin: 0.5% 0 0 0.5%;
 }
 /* Colonna Centrale */
 .cntrcol{
-  position: relative;
-  height: 250px;
-  width: 35%;
-  background-color: lightgreen;
-  margin: 0px 2.5%;
+  width: 55%;
+  background-color: white;
+  margin: 0.5% 2.5% 0;
 }
 /* Colonna Destra */
 .cont_rxcol{
   float:left;
-  height: 600px;
-  width: 30%;
+  width: 19.5%;
+  margin: 0.5% 0.5% 0 0;
 }
 
 /* Contenuto Colonna Destra */
 .cont_rxcol .rxcol{
-  position: relative;
-  height: calc(570px/3);
-  background-color: #ff9999;
+  background-color: white;
   border-radius: 10px;
-  border: 2px solid black;
 }
+
 .cont_rxcol .rxcol:nth-child(2){
-margin: 15px 0;
+margin: 6px 0;
+}
+
+.cont_rxcol .rxcol:nth-child(3){
+margin-bottom: 6px;
 }
 
 /* Footer */
 #cont_footer{
   position: relative;
   float:left;
-  background-color: #8080ff;
-  margin: 20px 0;
-  height: 80px;
+  background-color: #2d5674;
+  margin: 6px 0;
   width: 100%;
-  border: 2px solid black;
-  border-radius: 10px;
+}
+
+.dev{
+  font-family: 'Tomorrow';
+  font-size: 15px;
+  font-weight: bold;
+  color:white;
+  text-align: center;
+  padding: 3px;
+}
+
+.social{
+  text-align: center;
+  font-family: 'Odibee Sans';
+  padding-left: 10px;
+  font-size: 40px;
+  color: white;
+  border-radius: 0 5px 0 5px;
 }

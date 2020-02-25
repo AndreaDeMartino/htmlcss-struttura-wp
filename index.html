@@ -2,68 +2,145 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link href="https://fonts.googleapis.com/css?family=Changa&display=swap" rel="stylesheet">
+    <!-- Font Menu -->
+    <link href="https://fonts.googleapis.com/css?family=Tomorrow&display=swap" rel="stylesheet">
+    <!-- Font Titoli -->
+    <link href="https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap" rel="stylesheet">
+    <!-- Font Testo -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <!-- Font Sottotitolo -->
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/c2709405dd.js" crossorigin="anonymous"></script>
     <title>Wordpress</title>
   </head>
 
-
   <body>
-
-    <!-- Testata -->
-    <header>
-      <!-- Sezione Logo -->
-      <section id="logo">
-        <h1 class = "text">SFONDO</h1>
-      </section>
-      <!-- Sezione Menu -->
-      <section id="menu">
-        <ul>
-          <li><a href="#">HOME</a></li>
-          <li><a href="#">ABOUT</a></li>
-          <li><a href="#">PAGE TEMPLATES</a></li>
-          <li><a href="#">A PARENT PAGE</a></li>
-          <li><a href="#">FEATURES</a></li>
-          <li><a href="#">BLOG</a></li>
-          <li><a href="#">CONTACT</a></li>
-        </ul>
-      </section>
-    </header>
-
-    <!-- Corpo -->
-    <main>
-      <!-- Contentiore -->
-      <div id="container"
-        <!-- Colonna Sinistra -->
-        <div class="lxcol colonna">
-          <h1 class = "text">COLONNA SX1</h1>
-        </div>
-        <!-- Colonna Centrale -->
-        <div class="cntrcol colonna">
-          <h1 class = "text">COLONNA CNTRL</h1>
-        </div>
-        <!-- Contentitore Colonna Destra -->
-        <div class="cont_rxcol">
-          <!-- Sottoelementi Colonna Destra -->
-          <div class="rxcol">
-            <h1 class = "text">COLONNA DX1</h1>
+    <!-- Container Generale -->
+    <div class="generalcontainer">
+      <!-- Testata -->
+      <header class = "mainheader">
+        <!-- Sezione Logo -->
+        <section >
+          <div id="logo">
           </div>
-          <div class="rxcol">
-           <h1 class = "text">COLONNA DX2</h1>
+        </section>
+        <!-- Sezione Menu -->
+        <section>
+          <div id="menu">
+            <ul>
+              <li><a href="#">HOME</a></li>
+              <li><a href="#">CORSO</a></li>
+              <li><a href="#">DOPO IL CORSO</a></li>
+              <li><a href="#">LEZIONE GRATUITA</a></li>
+              <li><a href="#">CANDIDATI</a></li>
+              <li><a href="#">CONTACT</a></li>
+            </ul>
           </div>
-          <div class="rxcol">
-            <h1 class = "text">COLONNA DX3</h1>
+        </section>
+      </header>
+
+      <!-- Main -->
+      <main>
+        <!-- Contentiore main -->
+        <div id="mainconteiner" class= "clearfix">
+          <!-- Sezione Colonna Sinistra -->
+          <section>
+            <div class="lxcol colonna">
+              <h2 class = "titolo">MONEY BACK:</h2>
+              <h2 class = "titolo">LA NOSTRA GARANZIA:</h2>
+              <div id = "logobool"></div>
+              <p class = "contenuto">
+                A partire dalla fine del corso, il nostro dipartimento placement ti supporterà in tutte le fasi di ricerca del lavoro.
+              </p>
+              <br>
+              <p class = "contenuto">
+                L’impegno che avrai dimostrato durante il corso, la tua resilienza e le competenze acquisite faranno veramente la differenza.
+              </p>
+              <br>
+              <p class = "contenuto">
+                Se dopo 6 mesi di ricerca attiva non avrai trovato un impiego, ti rimborseremo l’intero ammontare del corso grazie alla nostra garanzia Money Back.
+              </p>
+            </div>
+          </section>
+          <!-- Sezione Colonna Centrale -->
+          <section>
+            <div class="cntrcol colonna">
+              <h2 class="titolo">DIVENTA SVILUPPATORE WEB</h2>
+              <h4 class= 'sottotitolo'>SE NON TROVI LAVORO TI RIMBORSIAMO.</h4>
+              <ul>
+                <li class='contenuto'>
+                  6 mesi di corso intensivo online in diretta
+                </li>
+                <li class='contenuto'>
+                  Nessuna competenza di programmazione richiesta
+                </li>
+                <li class='contenuto'>
+                  Siamo certi del tuo successo, altrimenti ti rimborsiamo
+                </li>
+              </ul>
+              <h4 class='sottotitolo'>UNA VERA SCUOLA A CASA TUA</h4>
+              <ul>
+                <li class='contenuto'>
+                  Il mattino è maggiormente dedicato alla teoria con lezioni in diretta. Comodamente da casa tua, puoi interagire con i tuoi compagni e con il teacher , proprio come se fossi a scuola.
+                </li>
+                <li class='contenuto'>
+                  Il pomeriggio è dedicato alle esercitazioni.
+                  In qualsiasi momento puoi chiedere supporto ai
+                  tutor per risolvere gli esercizi che ti abbiamo assegnato. Alza la mano e siamo subito da te!
+                </li>
+              </ul>
+              <h2 class = "titolografico">Retribuzione:</h2>
+              <div id = "grafico"></div>
+            </div>
+          </section>
+            <!-- Sezione Colonna Destra -->
+          <section>
+            <!-- Contenitore Colonna Destra -->
+            <div class="cont_rxcol">
+              <!-- Sottoelementi Colonna Destra -->
+              <div class="rxcol colonna">
+                <i class="fab fa-html5 icona"> HTML</i>
+                <p class = "contenuto">
+                  L'HTML è un linguaggio di pubblico dominio, la cui sintassi è stabilita dal World Wide Web Consortium (W3C). È derivato dall'SGML, un metalinguaggio finalizzato alla definizione di linguaggi utilizzabili per la stesura di documenti destinati alla trasmissione in formato elettronico. La versione attuale, la quinta, è stata rilasciata dal W3C nell'ottobre 2014.
+                </p>
+              </div>
+              <div class="rxcol colonna">
+                <i class="fab fa-css3-alt icona"> CSS</i>
+                <p class = "contenuto">
+                  Il CSS (sigla di Cascading Style Sheets, in italiano fogli di stile a cascata), in informatica, è un linguaggio usato per definire la formattazione di documenti HTML, XHTML e XML, ad esempio i siti web e relative pagine web. Le regole per comporre il CSS sono contenute in un insieme di direttive (Recommendations) emanate a partire dal 1996 dal W3C.
+                </p>
+              </div>
+              <div class="rxcol colonna">
+                <i class="fab fa-js-square icona"> JAVASCRIPT</i>
+                <p class = "contenuto">
+                  JavaScript è un linguaggio di scripting orientato agli oggetti e agli eventi, comunemente utilizzato nella programmazione Web lato client (recentemente esteso anche al lato server) per la creazione, in siti web e applicazioni web, di effetti dinamici interattivi tramite funzioni di script invocate da eventi innescati a loro volta in vari modi dall'utente sulla pagina web in uso (mouse, tastiera, caricamento della pagina ecc...).
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+
+      <!-- Footer -->
+      <footer>
+        <!-- Contenitore Footer -->
+        <div id="cont_footer">
+          <!-- Info Developer -->
+          <div class="dev">
+            Made by: Andrea De Martino
+          </div>
+        <!-- Socials -->
+          <div class="social">
+            <i class="fab fa-twitter-square"></i>
+            <i class="fab fa-instagram-square"></i>
+            <i class="fab fa-facebook-square"></i>
+            <i class="fab fa-github-square"></i>
           </div>
         </div>
-      </div>
-    </main>
+      </footer>
 
-    <!-- Footer -->
-    <footer>
-      <div id="cont_footer">
-        <h1 class = "text">FOOTER</h1>
-      </div>
-    </footer>
-
+    </div>
   </body>
 </html>
